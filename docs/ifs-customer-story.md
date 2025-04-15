@@ -7,10 +7,10 @@ nav_order: 1
 # Customer Story: Innovate Financial Services AI Transformation
 
 **Company Background:**
-Innovate Financial Services (IFS) is a well-established global financial institution providing banking, investment, and insurance services. IFS is facing increasing pressure from agile fintech startups and evolving customer expectations for personalized, digital-first experiences. They possess vast amounts of transactional, market, and customer interaction data, but it resides in siloed legacy systems, hindering innovation and responsiveness.
+Innovate Financial Services (IFS) is a well-established financial institution providing banking, investment, and insurance services. IFS is facing increasing pressure from agile fintech startups and evolving customer expectations for personalized, digital-first experiences. They possess vast amounts of transactional, market, and customer interaction data, but it resides in siloed legacy systems, hindering innovation and responsiveness.
 
 **Strategic Imperative: AI-Driven Future**
-IFS leadership has initiated an ambitious AI adoption strategy to maintain market leadership, enhance customer trust, and improve operational efficiency. They aim to leverage AI for fraud detection, personalized financial advice, risk management, and automated customer support. Azure has been selected as the strategic cloud platform due to its comprehensive AI services, enterprise-grade security, scalability, and alignment with the Cloud Adoption Framework principles.
+IFS leadership has initiated an ambitious AI adoption strategy to maintain market leadership, enhance customer trust, and improve operational efficiency. They aim to leverage AI for fraud detection, personalized financial advice, risk management, and automated customer support. Azure has been selected as the strategic cloud platform due to its comprehensive AI services, enterprise-grade security, scalability, and various compliance offerings.
 
 **Current State & Challenges:**
 * **Infrastructure Complexity:** A mix of on-premises data centers and disparate, early-stage cloud experiments lacks standardization, making governance difficult and security inconsistent.

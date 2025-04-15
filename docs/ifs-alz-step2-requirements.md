@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Step 2 - Define Requirements
+title: Step 2 - Capture the Requirements
 parent: AI Foundation & Hub Challenge
 nav_order: 2
 ---
@@ -33,3 +33,10 @@ nav_order: 2
     * Requirement: The architecture must scale to accommodate significant growth in data volume, users, and AI workload complexity
     * Requirement: Optimize for operational efficiency, potentially through automation and standardized deployment patterns
     * Requirement: Achieve target levels for reliability and disaster recovery for critical systems
+
+**Success Criteria:**  
+By the end of this step, participants should be able to:
+- Clearly list and categorize the key business and technical requirements for the Azure AI foundation.
+- Ensure requirements address governance, security, compliance, connectivity, scalability, and operational needs.
+- Demonstrate alignment of requirements with IFS's business objectives and regulatory obligations.
+- Provide a requirements summary that will guide the subsequent architecture design steps.
