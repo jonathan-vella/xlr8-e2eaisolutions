@@ -1,0 +1,46 @@
+title: XLR8 Designing End to End AI Solutions
+description: This workshop guides participants through the end-to-end process of designing a secure, scalable, and governed AI solution on Microsoft Azure, aligning with the Microsoft Cloud Adoption Framework (CAF) and Azure Well-Architected Framework (WAF) principles. The workshop begins with a realistic customer scenario, Innovate Financial Services (IFS). Participants will first design the foundational Azure platform using Azure Landing Zones concepts, including an AI Hub for governed access to AI services. Subsequently, they will design a specific AI workload that will leverage this platform foundation. The end game is to create a comprehensive trustworthy AI solution that meets the needs of IFS.
+# Theme settings - use the standard GitHub Pages theme approach
+remote_theme: pmarsceill/just-the-docs
+
+url: https://jonathan-vella.github.io
+baseurl: "/xlr8-e2eaisolutions"
+
+# GitHub Pages specific settings
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+# Exclude specific directories from processing
+exclude:
+  - workshop-assets/
+  - "workshop-assets/**"
+  - vendor/
+  - "vendor/**"
+
+aux_links:
+  Template Repository: https://github.com/jonathan-vella/xlr8-e2eaisolutions
+
+# For proper linking in the navigation
+collections:
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
+
+# Enable callouts
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note 
+    color: purple
+  warning:
+    title: Warning
+    color: red
