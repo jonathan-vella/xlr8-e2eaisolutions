@@ -13,6 +13,8 @@ The workshop begins with a realistic customer scenario (Innovate Financial Servi
 
 **Goal:** To equip participants with the knowledge and design patterns necessary to architect robust enterprise AI solutions on Azure, from the underlying platform infrastructure to the specific AI application components.
 
+> Note: This workshop is available as a public GitHub repository, allowing participants to access materials, documentation, and resources easily. The workshop is designed to be hands-on, with practical exercises and discussions throughout the sessions. It is also published as a documentation site using GitHub Pages, providing a structured and navigable format for participants to follow along. Link to github pages: [Workshop Documentation](https://jonathan-vella.github.io/xlr8-e2eaisolutions/)
+
 ## Workshop Flow
 
 ```mermaid
