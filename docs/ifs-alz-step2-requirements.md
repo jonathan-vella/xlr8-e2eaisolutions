@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Step 2 - Capture the Requirements
-parent: AI Foundation & Hub Challenge
+parent: AI Foundations Challenge
 nav_order: 2
 ---
 

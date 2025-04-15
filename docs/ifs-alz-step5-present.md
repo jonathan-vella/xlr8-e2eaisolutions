@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Step 5 - Present and Justify
-parent: AI Foundation & Hub Challenge
+parent: AI Foundations Challenge
 nav_order: 5
 ---
 

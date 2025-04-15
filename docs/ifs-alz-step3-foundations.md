@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Step 3 - Design the Foundations
-parent: AI Foundation & Hub Challenge
+parent: AI Foundations Challenge
 nav_order: 3
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Step 4 - Centralize AI Services
-parent: AI Foundation & Hub Challenge
+parent: AI Foundations Challenges
 nav_order: 4
 ---
 

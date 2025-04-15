@@ -1,7 +1,7 @@
 ---
 layout: default
 title: References
-parent: AI Foundation & Hub Challenge
+parent: AI Foundations Challenge
 nav_order: 5
 ---
 

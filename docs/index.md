@@ -20,7 +20,7 @@ This workshop is divided into multiple challenge sessions that guide you through
 ### [Customer Story](./ifs-customer-story.md)
 Understand IFS's background, challenges, and strategic vision for AI adoption.
 
-### [AI Foundation & Hub Challenge](./ifs-alz-overview.md)
+### [AI Foundations Challenge](./ifs-alz-overview.md)
 Design a secure, scalable, and governed Azure foundation to support IFS's AI transformation journey.
 
 ### [RAG Chatbot Challenge](./ifs-rag-overview.md)

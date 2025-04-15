@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Step 1 - Understand the Customer
-parent: AI Foundation & Hub Challenge
+parent: AI Foundations Challenge
 nav_order: 1
 ---
 
