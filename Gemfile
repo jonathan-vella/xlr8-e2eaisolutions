@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem "github-pages", "~> 232", group: :jekyll_plugins
-gem "just-the-docs", "~> 0.5.3"  # Use a version compatible with GitHub Pages
+gem "just-the-docs", "~> 0.10.1" # Use a version compatible with GitHub Pages
 gem "minima", "~> 2.5"  # Add minima as a fallback theme
 gem "csv"  # Add CSV gem to address warning
 gem "faraday-retry"  # Add faraday-retry gem to address warning
