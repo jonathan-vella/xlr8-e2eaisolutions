@@ -7,7 +7,7 @@ permalink: /
 
 # Innovate Financial Services - AI Transformation
 
-![IFS Logo](/media/images/ifs.png)
+![IFS Logo](../media/images/ifs.png)
 
 ## Welcome to the IFS AI Transformation Workshop
 
