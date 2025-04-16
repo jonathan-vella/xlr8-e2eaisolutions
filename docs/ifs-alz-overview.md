@@ -1,6 +1,6 @@
 ---
 layout: default
-title: AI Foundation & Hub Challenge
+title: AI Foundations Challenge
 nav_order: 2
 has_children: true
 permalink: /docs/alz-challenge/

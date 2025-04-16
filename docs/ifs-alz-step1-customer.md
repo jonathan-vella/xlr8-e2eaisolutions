@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Step 1 - Understand the Customer
-parent: AI Foundation & Hub Challenge
+parent: AI Foundations Challenge
 nav_order: 1
 ---
 
-## Step 1: Understand the Customer (15 minutes)
+## Step 1: Understand the Customer (30 minutes)
 
 **Activity:** Review the [Innovate Financial Services Customer Story](./ifs-customer-story.md).
 
@@ -27,6 +27,13 @@ nav_order: 1
 > - What are the key metrics that will be used to measure success?
 > - What are the KPIs that will be used to measure success?
 
-> Use the answers to these questions to help define the customer's mission statement for their AI adoption cloud strategy. For example:
+Use the answers to these questions to help define the customer's mission statement for their AI adoption cloud strategy. For example:
 
 > *"IFS will leverage Azure and AI to transform their financial services, enhancing customer experience and operational efficiency while ensuring compliance and security. Their goal is to innovate rapidly, reduce costs, and deliver high-quality services that meet the evolving needs of their customers."*
+
+**Success Criteria:**  
+By the end of this step, participants should be able to clearly articulate:
+- The main business drivers and objectives for IFS's AI adoption.
+- The specific AI use cases IFS is targeting.
+- The measurable success metrics and KPIs that will be used to evaluate the initiative (e.g., reduction in fraud, improved customer satisfaction, cost savings, faster AI deployment cycles).
+- A draft mission statement summarizing IFS's AI transformation goals.
