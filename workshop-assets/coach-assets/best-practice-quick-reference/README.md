@@ -5,16 +5,16 @@
 This repository provides categorized markdown summaries of best practices and recommendations for deploying and managing Azure OpenAI workloads. The content is based on Microsoft's official [Azure OpenAI Best Practices Quick Reference Guide](https://techcommunity.microsoft.com/blog/startupsatmicrosoftblog/azure-openai-best-practices-a-quick-reference-guide-to-optimize-your-deployments/4403546) and the comprehensive AI Landing Zone checklist.
 
 ## About the Markdown Files
-Each file in the `markdown_summaries/` folder corresponds to a key area of Azure OpenAI deployment:
+Each file in this folder corresponds to a key area of Azure OpenAI deployment:
 
-- [**application_deployment.md**](./application_deployment.md): Recommendations for application deployment, including DevOps and data classification.
-- [**bc_and_dr.md**](./bc_and_dr.md): Business Continuity and Disaster Recovery (BCDR) strategies, such as multi-region deployments and failover.
-- [**cost_governance.md**](./cost_governance.md): Cost management, optimization, quota management, and usage monitoring.
-- [**governance_and_security.md**](./governance_and_security.md): Security baselines, access controls, compliance, and governance strategies.
-- [**identity_and_access_management.md**](./identity_and_access_management.md): Identity, authentication, and RBAC best practices.
-- [**network_topology_and_connectivity.md**](./network_topology_and_connectivity.md): Networking, VNet isolation, private endpoints, and secure connectivity.
-- [**operations.md**](./operations.md): Monitoring, logging, alerting, and operational excellence.
-- [**best-practices-summary.md**](./best-practices-summary.md): A consolidated summary of all key Azure OpenAI best practices.
+- 🚀 [**Application Deployment**](./application_deployment.md): Recommendations for application deployment, including DevOps and data classification.
+- 🌐 [**BCDR**](./bc_and_dr.md): Business Continuity and Disaster Recovery (BCDR) strategies, such as multi-region deployments and failover.
+- 💸 [**Cost Governance**](./cost_governance.md): Cost management, optimization, quota management, and usage monitoring.
+- 🛡️ [**Governance & Security**](./governance_and_security.md): Security baselines, access controls, compliance, and governance strategies.
+- 👤 [**Identity & Access Management**](./identity_and_access_management.md): Identity, authentication, and RBAC best practices.
+- 🕸️ [**Network Topology & Connectivity**](./network_topology_and_connectivity.md): Networking, VNet isolation, private endpoints, and secure connectivity.
+- ⚙️ [**Operations**](./operations.md): Monitoring, logging, alerting, and operational excellence.
+- 📋 [**Best Practices Summary**](./best-practices-summary.md): A consolidated summary of all key Azure OpenAI best practices.
 
 Each markdown file contains a table with:
 - **Category** and **Subcategory**
