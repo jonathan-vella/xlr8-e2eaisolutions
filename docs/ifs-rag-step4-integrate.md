@@ -15,7 +15,7 @@ nav_order: 4
 
 1. **Networking Integration:**
     * How will you ensure that all workload components (UI, backend, dependencies) are securely integrated into the Landing Zone Virtual Network (VNet)?
-    * What steps are required to configure private endpoints or VNet integration for services like Azure AI Search, Azure OpenAI (via AI Hub), and Key Vault?
+    * What steps are required to configure private endpoints or VNet integration for services like Azure AI Search, Azure OpenAI, and Key Vault?
     * How will you verify DNS resolution for private endpoints to ensure seamless communication between components?
 
 2. **Identity and Access Management:**

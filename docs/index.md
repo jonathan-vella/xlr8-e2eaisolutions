@@ -26,6 +26,9 @@ Design a secure, scalable, and governed Azure foundation to support IFS's AI tra
 ### [RAG Chatbot Challenge](./ifs-rag-overview.md)
 Design a secure internal Retrieval-Augmented Generation (RAG) chatbot application for IFS employees.
 
+### [AI Hub Challenge](./ifs-aihub-overview.md)
+Design a dedicated, secure "AI Hub" environment to centrally manage and control access to shared Azure AI services, expanding on the learnings from implementing the RAG chatbot workload.
+
 ### [Frequently Asked Questions](./ifs-faq.md)
 Common questions and answers about the workshop and IFS's AI journey.
 

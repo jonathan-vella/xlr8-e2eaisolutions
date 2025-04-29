@@ -5,7 +5,7 @@ parent: RAG Chatbot Challenge
 nav_order: 3
 ---
 
-## Step 3: Design the Chat Application Architecture (2 hours)
+## Step 3: Design the Chat Application Architecture (1.5 hours)
 
 **Activity:** Design the end-to-end architecture for the "IFS Knowledge Assistant". Create diagrams showing components, interactions, networking, and key Azure services. Address the questions below.
 

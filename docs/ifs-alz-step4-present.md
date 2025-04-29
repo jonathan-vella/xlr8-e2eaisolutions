@@ -2,7 +2,7 @@
 layout: default
 title: Step 5 - Present and Justify
 parent: AI Foundations Challenge
-nav_order: 5
+nav_order: 4
 ---
 
 ## Step 4: Present and Justify (1 hour)
