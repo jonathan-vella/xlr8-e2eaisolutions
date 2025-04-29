@@ -15,27 +15,27 @@ This two-day workshop guides participants through the end-to-end process of desi
 | 9:00 - 9:30 | **Welcome and Introduction** | Overview of workshop objectives, format, and expected outcomes |
 | 9:30 - 10:15 | **Customer Story: Innovate Financial Services** | Introduction to IFS, their business drivers, challenges, and AI adoption vision |
 | 10:15 - 10:30 | **Break** |  |
-| 10:30 - 12:00 | **AI Foundations Challenge - Part 1** | <ul><li>Understand the Customer</li><li>Define Requirements</li></ul> |
+| 10:30 - 12:00 | **AI Foundations Challenge - Part 1** | * Understand the Customer<br>* Define Requirements |
 | 12:00 - 13:00 | **Lunch** |  |
-| 13:00 - 15:00 | **AI Foundations Challenge - Part 2** | <ul><li>Design the Foundations</li><li>Design Application Landing Zones</li></ul> |
+| 13:00 - 15:00 | **AI Foundations Challenge - Part 2** | * Design the Foundations<br>* Design Application Landing Zones |
 | 15:00 - 15:15 | **Break** |  |
-| 15:15 - 16:30 | **AI Foundations Challenge - Presentations** | <ul><li>Group presentations of Landing Zone architecture designs</li><li>Feedback and discussion</li></ul> |
-| 16:30 - 17:00 | **Day 1 Wrap-up** | <ul><li>Summary of key learnings</li><li>Preview of Day 2</li></ul> |
+| 15:15 - 16:30 | **AI Foundations Challenge - Presentations** | * Group presentations of Landing Zone architecture designs<br>* Feedback and discussion |
+| 16:30 - 17:00 | **Day 1 Wrap-up** | * Summary of key learnings<br>* Preview of Day 2 |
 
 ## Day 2
 
 | Time | Session | Description |
 |------|---------|-------------|
 | 9:00 - 9:15 | **Day 2 Introduction** | Recap of Day 1 and overview of Day 2 activities |
-| 9:15 - 10:30 | **RAG Chatbot Challenge - Part 1** | <ul><li>Define the Workload Scenario</li><li>Elicit Requirements</li></ul> |
+| 9:15 - 10:30 | **RAG Chatbot Challenge - Part 1** | * Define the Workload Scenario<br>* Elicit Requirements |
 | 10:30 - 10:45 | **Break** |  |
-| 10:45 - 12:30 | **RAG Chatbot Challenge - Part 2** | <ul><li>Design Application Architecture</li><li>Plan for Integration with Landing Zone</li></ul> |
+| 10:45 - 12:30 | **RAG Chatbot Challenge - Part 2** | * Design Application Architecture<br>* Plan for Integration with Landing Zone |
 | 12:30 - 13:30 | **Lunch** |  |
-| 13:30 - 14:15 | **RAG Chatbot Challenge - Presentations** | <ul><li>Group presentations of chatbot architecture</li><li>Discussion of implementation considerations</li></ul> |
-| 14:15 - 15:45 | **AI Hub Challenge** | <ul><li>Define Requirements for Scaling to Enterprise AI</li><li>Design Centralized AI Hub Architecture</li></ul> |
+| 13:30 - 14:15 | **RAG Chatbot Challenge - Presentations** | * Group presentations of chatbot architecture<br>* Discussion of implementation considerations |
+| 14:15 - 15:45 | **AI Hub Challenge** | * Define Requirements for Scaling to Enterprise AI<br>* Design Centralized AI Hub Architecture |
 | 15:45 - 16:00 | **Break** |  |
-| 16:00 - 16:30 | **AI Hub Challenge - Presentations** | <ul><li>Group presentations of AI Hub architecture</li><li>Discussion of enterprise scalability</li></ul> |
-| 16:30 - 17:00 | **Workshop Conclusion** | <ul><li>Summary of end-to-end design</li><li>Best practices review</li><li>Next steps and resources</li></ul> |
+| 16:00 - 16:30 | **AI Hub Challenge - Presentations** | * Group presentations of AI Hub architecture<br>* Discussion of enterprise scalability |
+| 16:30 - 17:00 | **Workshop Conclusion** | * Summary of end-to-end design<br>* Best practices review<br>* Next steps and resources |
 
 ## Workshop Progression
 
