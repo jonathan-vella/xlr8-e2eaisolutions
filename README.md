@@ -1,7 +1,7 @@
 # Workshop: Designing an End-to-End Azure AI Solution
 
-**Version:** 1.0  
-**Date:** 2025-04-15
+**Version:** 1.1  
+**Date:** 2025-04-30
 
 ![IFS Logo](./media/images/ifs.png)
 
@@ -9,87 +9,15 @@
 
 This workshop guides participants through the end-to-end process of designing a secure, scalable, and governed AI solution on Microsoft Azure, aligning with the Microsoft Cloud Adoption Framework (CAF) and Azure Well-Architected Framework (WAF) principles.
 
-The workshop begins with a realistic customer scenario (Innovate Financial Services - IFS). Participants will first design the foundational Azure platform using Azure Landing Zones concepts, including a specialized AI Hub for governed access to AI services. Subsequently, they will design a specific AI workload – an internal RAG (Retrieval-Augmented Generation) chatbot – that leverages this platform foundation.
+The workshop follows a logical progression that mirrors an organization's AI adoption journey. Participants will first analyze a case study to identify AI use cases and define an AI Strategy and Plan. Participants will then proceed to build an AI Ready platform on Azure, corresponding to designing the foundational infrastructure. Following this, they will Design AI workloads by developing the specific AI solution and integrating it into the platform. The ultimate objective is to run well-architected AI workloads in a production-ready environment, integrating governance, management, and security practices—all aligned toward achieving Trustworthy AI.
 
-**Goal:** To equip participants with the knowledge and design patterns necessary to architect robust enterprise AI solutions on Azure, from the underlying platform infrastructure to the specific AI application components.
+**Goal:** To equip participants with the knowledge and design patterns necessary to architect robust enterprise AI solutions on Azure, following the natural evolution from foundation to workload to enterprise-wide scaling.
 
 > Note: This workshop is available as a public GitHub repository, allowing participants to access materials, documentation, and resources easily. The workshop is designed to be hands-on, with practical exercises and discussions throughout the sessions. It is also published as a documentation site using GitHub Pages, providing a structured and navigable format for participants to follow along. Link to github pages: [Workshop Documentation](https://jonathan-vella.github.io/xlr8-e2eaisolutions/)
 
 ## Workshop Flow
 
-```mermaid
-%% AI Adoption Journey - The "Like a Boss" version
-graph LR
-    %% Phase 01: Define AI Strategy with starting glyph
-    P1[🚀 Phase 01: Define AI Strategy]
-    P1a[Motivations]
-    P1b[Mission]
-    P1c[Objectives]
-    
-    %% Phase 02: Design AI platform
-    P2[Phase 02: Design AI platform]
-    P2a[Identity & Access Mgmt]
-    P2b[Resource Organization]
-    P2c[Networking]
-    P2d[Management & Monitoring]
-    P2e[Security & Compliance]
-    
-    %% Phase 03: Design AI workload
-    P3w[Phase 03: Design AI workload]
-    P3w1[Use Cases]
-    P3w2[Prompt Flow]
-    P3w3[Components]
-    P3w4[Well-Architected Considerations]
-    
-    %% Phase 03: Design AI environment
-    P3e[Phase 03: Design AI environment]
-    P3e1[Subscription Setup]
-    P3e2[Networking]
-    P3e3[AI Model Governance]
-    P3e4[Data Governance]
-    P3e5[Management & Monitoring]
-    P3e6[Security & Compliance]
-    
-    %% Phase 03: AI Workload Landing Zone Integration Phase
-    P3l[Phase 03: AI Workload Landing Zone Integration Phase]
-    
-    %% Phase 04: End-to-End Review & Justification
-    P4[Phase 04: End-to-End Review & Justification]
-    
-    %% Phase 05: Beer o'clock with beer glyph
-    P5[🍺 Phase 05: Beer o'clock]
-
-    %% Link sections within each phase
-    P1 --> P1a
-    P1 --> P1b
-    P1 --> P1c
-
-    P2 --> P2a
-    P2 --> P2b
-    P2 --> P2c
-    P2 --> P2d
-    P2 --> P2e
-
-    P3w --> P3w1
-    P3w --> P3w2
-    P3w --> P3w3
-    P3w --> P3w4
-
-    P3e --> P3e1
-    P3e --> P3e2
-    P3e --> P3e3
-    P3e --> P3e4
-    P3e --> P3e5
-    P3e --> P3e6
-
-    %% Define overall sequence
-    P1 --> P2
-    P2 --> P3w
-    P3w --> P3e
-    P3e --> P3l
-    P3l --> P4
-    P4 --> P5
-```
+![Trustworthy AI Logo](../media/images/cafai.png)
 
 ## Modules
 
@@ -104,18 +32,19 @@ graph LR
 
 **Materials:**  
 - [Customer Story](./docs/ifs-customer-story.md)
+- [Workshop Agenda](./docs/workshop-agenda.md)
 
 ---
 
 ### Module 2: Designing the Azure AI Platform Foundation
 #### In scope: CAF: Ready, Govern, Manage, Secure | WAF: Security, Reliability, Operational Excellence
 
-**Objective:** Design a secure, scalable, and well-governed Azure foundation using Landing Zone principles to support IFS's current needs and future AI adoption. This includes designing a central, secure "AI Hub" for managing and accessing shared AI services like Azure OpenAI and Azure AI Search.
+**Objective:** Design a secure, scalable, and well-governed Azure foundation using Landing Zone principles to support IFS's current needs and future AI adoption.
 
 **Activities:**  
-- Define platform requirements (security, governance, connectivity, AI service management).  
+- Define platform requirements (security, governance, connectivity).  
 - Design the Landing Zone structure (Platform & Application LZs).  
-- Architect the AI Hub with private networking (Private Endpoints, secure gateway).  
+- Establish networking, identity, and security controls.  
 - Select core platform services.
 
 **Key Concepts:**  
@@ -124,15 +53,14 @@ graph LR
 - Network topology (Hub-Spoke).  
 - Private networking.  
 - Azure Policy.  
-- Azure Monitor.  
-- Centralized AI service governance.
+- Azure Monitor.
 
 **Materials:**  
 - [Platform Challenge Overview](./docs/ifs-alz-overview.md)
 - [Step 1: Understand the Customer](./docs/ifs-alz-step1-customer.md)
 - [Step 2: Define Requirements](./docs/ifs-alz-step2-requirements.md)
-- [Step 3: Design Challenges](./docs/ifs-alz-step3-challenges.md)
-- [Step 4: Present and Justify](./docs/ifs-alz-step4-present.md)
+- [Step 3: Design Challenges](./docs/ifs-alz-step3-foundations.md)
+- [Step 4: Present and Justify](./docs/ifs-alz-step5-present.md)
 - [References](./docs/ifs-alz-references.md)
 
 ---
@@ -140,7 +68,7 @@ graph LR
 ### Module 3: Designing the AI Workload - RAG Chatbot
 #### In scope: AI Ready – Process to build AI workloads in Azure | Well Architected Framework
 
-**Objective:** Design the specific "IFS Knowledge Assistant" RAG chatbot application, ensuring it leverages the platform foundation securely and efficiently.
+**Objective:** Design a specific "IFS Knowledge Assistant" RAG chatbot application, ensuring it leverages the platform foundation securely and efficiently.
 
 **Activities:**  
 - Define workload requirements.  
@@ -148,8 +76,7 @@ graph LR
 - Select appropriate Azure services for hosting components (e.g., App Service, ML Endpoints).  
 - Design the RAG pipeline.  
 - Implement security controls (Managed Identities, Key Vault).  
-- Plan for monitoring.  
-- Outline deployment strategies (IaC, CI/CD).
+- Plan for monitoring and deployment.
 
 **Key Concepts:**  
 - RAG pattern.  
@@ -176,12 +103,45 @@ graph LR
 
 ---
 
-### Module 4: End-to-End Review & Justification
+### Module 4: Designing the Enterprise AI Hub
+#### In scope: Enterprise Scaling, Centralized Governance, Cost Management
 
-**Objective:** Consolidate the platform and workload designs into a cohesive end-to-end solution.
+**Objective:** Based on lessons learned from the initial RAG chatbot implementation, design a dedicated "AI Hub" that enables enterprise-wide AI adoption with centralized governance and security.
 
 **Activities:**  
-- Present the final architecture, justifying design choices based on requirements, CAF principles, and WAF pillars.  
+- Identify scaling limitations from the initial workload implementation.
+- Define requirements for multi-department AI service access.
+- Design a secure gateway architecture for AI services.
+- Create governance, monitoring, and cost management strategies.
+- Establish patterns for secure cross-department connectivity.
+
+**Key Concepts:**  
+- Centralized AI service management.
+- Secure API gateway.
+- Private endpoints at scale.
+- Cost allocation.
+- Cross-VNet connectivity.
+- Standardized development practices.
+- Comprehensive monitoring.
+
+**Materials:**  
+- [AI Hub Challenge Overview](./docs/ifs-aihub-overview.md)
+- [Step 1: Define the Scenario](./docs/ifs-aihub-step1-scenario.md)
+- [Step 2: Define Requirements](./docs/ifs-aihub-step2-requirements.md)
+- [Step 3: Design Architecture](./docs/ifs-aihub-step3-design.md)
+- [Step 4: Present and Justify](./docs/ifs-aihub-step4-present.md)
+- [References](./docs/ifs-aihub-references.md)
+
+---
+
+### Module 5: End-to-End Review & Justification
+
+**Objective:** Consolidate the complete solution from foundation to workload to enterprise AI Hub into a cohesive end-to-end architecture.
+
+**Activities:**  
+- Review the progression from initial foundation to enterprise AI capabilities.
+- Present the final architecture with all components.
+- Justify design choices based on requirements, CAF principles, and WAF pillars.
 - Discuss potential risks and mitigation strategies.
 
 ---
@@ -194,6 +154,7 @@ graph LR
 - **Governance:** Centralized policy enforcement, cost management, resource organization.  
 - **Scalability & Reliability:** Designing for growth and resilience.  
 - **Automation:** Utilizing Infrastructure as Code (IaC) and CI/CD practices.
+- **Enterprise Evolution:** Natural progression from initial workload to enterprise-wide capabilities.
 
 ---
 
@@ -208,9 +169,11 @@ graph LR
 ## Workshop Materials
 
 - [Workshop Home Page](./docs/index.md)
+- [Workshop Agenda](./docs/workshop-agenda.md)
 - [Scenario definition for Innovate Financial Services](./docs/ifs-customer-story.md)
-- [Whiteboard Design Session guide for the Platform Foundation & AI Hub](./docs/ifs-alz-overview.md)
+- [Whiteboard Design Session guide for the Platform Foundation](./docs/ifs-alz-overview.md)
 - [Whiteboard Design Session guide for the RAG Chatbot Workload](./docs/ifs-rag-overview.md)
+- [Whiteboard Design Session guide for the AI Hub](./docs/ifs-aihub-overview.md)
 - [Frequently Asked Questions](./docs/ifs-faq.md)
 - Workshop presentation slides (available separately)
 - IFS logo image at [media/images/ifs.png](./media/images/ifs.png)
@@ -225,15 +188,18 @@ This repository is configured to be published as a documentation site using GitH
 
 The documentation site structure includes:
 - Home page with workshop overview
-- Split challenge sessions with step-by-step guides
+- Workshop agenda with detailed timeline
+- Challenge sessions with step-by-step guides
 - Navigation hierarchy for easy content exploration
 
 ---
 
 ## References
 
-* [Microsoft Cloud Adoption Framework for Azure](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)
-* [Azure Cloud Adoption Framework - AI Scenario](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/)
-* [Azure OpenAI baseline Landing Zone reference architecture](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/azure-openai-baseline-landing-zone)
-* [AI Hub Gateway Solution Accelerator Concept](https://github.com/Azure-Samples/ai-hub-gateway-solution-accelerator/tree/main)
+* [Microsoft Cloud Adoption Framework for Azure](https://learn.microsoft.com/azure/cloud-adoption-framework/)
+* [Azure Cloud Adoption Framework - AI Scenario](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/ai/)
+* [Azure OpenAI baseline Landing Zone reference architecture](https://learn.microsoft.com/azure/architecture/ai-ml/architecture/azure-openai-baseline-landing-zone)
+* [Azure OpenAI End-to-End Chat Reference Architecture](https://learn.microsoft.com/azure/architecture/ai-ml/architecture/baseline-openai-e2e-chat)
+* [AI Hub Gateway Solution Accelerator](https://github.com/Azure-Samples/ai-hub-gateway-solution-accelerator/tree/main)
+* [Scaling AI workloads across the enterprise](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/ai/ai-ready/scale-ai-workloads)
 * [Just-the-Docs Jekyll Theme](https://just-the-docs.github.io/just-the-docs/)
