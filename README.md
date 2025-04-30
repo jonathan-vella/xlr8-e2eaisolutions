@@ -17,7 +17,7 @@ The workshop follows a logical progression that mirrors an organization's AI ado
 
 ## Workshop Flow
 
-![Trustworthy AI Logo](../media/images/cafai.png)
+![Trustworthy AI Logo](./media/images/cafai.png)
 
 ## Modules
 
