@@ -7,33 +7,54 @@ nav_order: 3
 
 ## Step 3: Design Challenges (Foundations & Workloads) (1.5 hours)
 
-**Activity:** Address the following technical challenges by designing the Azure architecture for IFS. Create diagrams and list key Azure services.
+**Activity:** Address the following technical challenges by designing the cloud architecture for IFS. Create diagrams illustrating your design and describe the key capabilities needed.
 
-### Challenge 1: Foundational Azure Environment (Platform Landing Zones)
+### Challenge 1: Foundational Cloud Environment (Platform Capabilities)
 
-* **Task:** Design the core Azure environment structure.
+* **Task:** Design the core cloud environment structure that provides shared services and governance.
 * **Questions:**
-    * How will you structure Azure subscriptions to separate platform functions (like networking, identity) from application workloads?
-    * What core services are needed for identity management, security monitoring, and policy enforcement across the entire Azure estate?
-    * How will you establish secure network connectivity between Azure and IFS's on-premises locations?
-    * How will you ensure consistent application of security policies and compliance standards?
+    * How will you structure the cloud environment's resources (e.g., subscriptions, resource groups, resources) to separate platform functions (like networking, identity) from application workloads?
+    * How will you separate different operational environments (e.g., development, testing, production) within the cloud environment?
+    * What capabilities will you use to manage identity and control access across the entire cloud estate?
+    * How will you implement centralized monitoring and logging for all cloud resources?
+    * How will you ensure that all cloud resources are compliant with IFS's security and governance policies (e.g., financial regulations)?
+    * How will you manage and enforce policies consistently across the different organizational units?
+    * How will you implement a secure and scalable network architecture, including connectivity to existing data centers?
+    * How will you ensure that all cloud infrastructure is deployed in a secure, compliant, and repeatable manner?
+    * How will you manage and monitor costs across the cloud environment?
+  
+### Challenge 2: Application & Workload Environments (Application Hosting Capabilities)
 
-### Challenge 2: Application & Workload Environments (Application Landing Zones)
-
-* **Task:** Design the environment(s) where IFS will host its modernized applications, data platforms, and specific AI/ML workloads (excluding the central AI services hub for now).
+* **Task:** Design the standardized environment(s) where IFS will host its modernized applications, data platforms, and specific AI/ML workloads.
 * **Questions:**
-    * What patterns will you use to provide standardized, secure environments for different types of applications (e.g., web apps, containerized services, data analytics)?
-    * How will these environments securely connect to the foundational services (identity, networking, management)?
-    * How will you ensure network segmentation between different applications or business units hosted in Azure?
+    * What patterns will you use to provide standardized, secure environments suitable for different types of applications (e.g., web apps, containerized services, data analytics, AI models)?
+    * How will these application environments securely connect to and consume the foundational shared services (identity, networking, management)?
+    * How will you ensure network segmentation and isolation between different applications or business units hosted in the cloud?
+    * How will you implement security controls for data protection (at rest and in transit) within these application environments?
+    * How will you manage secrets and sensitive configuration information securely within the application environments?
+    * What capabilities will you use to monitor and log activities specific to the applications within their environments?
+    * How will automated deployment pipelines (CI/CD) interact with these standardized application environments?
+
+---
 
 **Success Criteria:**  
 By the end of this step, participants should be able to:
-- Present a high-level Azure architecture diagram addressing Challenge 1 and Challenge 2.
-- Clearly explain how their design meets IFS's requirements for governance, security, compliance, scalability, and operational efficiency for foundational and workload environments.
-- Identify and justify the selection of key Azure services and architectural patterns for each challenge.
-- Demonstrate how private networking, centralized governance, and secure workload enablement are achieved.
-- Provide rationale for design decisions, referencing IFS's business objectives and regulatory needs.
+- Present an Azure architecture diagram illustrating:
+    - Management Group and Subscription structure (clearly delineating Platform and Application Landing Zones).
+    - Hub-and-Spoke network topology, including core networking services (e.g., Azure Firewall, ExpressRoute/VPN Gateway).
+    - Key identity and management services (e.g., Microsoft Entra ID integration, Azure Monitor, Azure Policy).
+- Explain how the proposed Landing Zone design specifically addresses the requirements captured in Step 2 for:
+    - **Governance:** Centralized policy enforcement, resource organization, separation of duties.
+    - **Security & Compliance:** Meeting regulations (PCI DSS, GDPR), data protection, threat monitoring.
+    - **Connectivity:** Secure hybrid connection, network segmentation.
+    - **AI Service Enablement:** Providing a foundation for secure AI service access (even if detailed in later modules).
+    - **Scalability & Operations:** Supporting growth, operational efficiency, reliability.
+- List and justify the selection of **at least five** key Azure services (e.g., Azure Policy, Azure Firewall, Microsoft Entra ID PIM, Azure Monitor, Azure Key Vault) and explain their role within the Platform and Application Landing Zones.
+- Demonstrate how the design implements core Landing Zone principles, including private networking (e.g., use of Private Endpoints where applicable), centralized governance through Azure Policy, and secure workload isolation.
+- Articulate the rationale for major design decisions, explicitly linking them back to specific IFS business objectives (e.g., reducing costs, improving innovation speed) and regulatory requirements identified in Step 1 and Step 2.
 
+---
+  
 **Notes:**  
 To effectively migrate, modernize, and innovate with applications at scale in Azure, a well-architected foundation is crucial. This is precisely what an Azure landing zone provides. Following key design principles across eight essential areas, it creates a scalable, modular, and consistent environment. A core tenet is the use of Azure subscriptions to provide isolation and enable independent scaling of both application and the underlying platform resources they depend on.
 
