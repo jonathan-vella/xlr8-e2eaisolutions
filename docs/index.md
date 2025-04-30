@@ -13,6 +13,11 @@ permalink: /
 
 This documentation contains materials for the Innovate Financial Services (IFS) AI transformation workshop. IFS is embarking on an ambitious journey to leverage Azure's AI capabilities to maintain market leadership, enhance customer trust, and improve operational efficiency.
 
+## Workshop Objectives
+The objectives of this workshop is to equip participants to analyze business needs, identify AI use cases, and formulate an AI strategy on Azure. Guide them in building an AI-ready platform, designing, integrating, and operationalizing trustworthy AI solutions.
+
+![Trustworthy AI Logo](../media/images/cafai.png)
+
 ## Workshop Structure
 
 This workshop is divided into multiple challenge sessions that guide you through designing secure, scalable Azure architectures to support IFS's AI transformation:
