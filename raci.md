@@ -54,45 +54,14 @@ RACI stands for:
 This guide outlines how the Microsoft Partner and customer teams work together throughout the AI on Azure engagement.
 
 ```mermaid
-flowchart TB
-    subgraph Process["AI on Azure Implementation Process"]
-        A[Engagement Kickoff]
-        B[Strategy & Planning]
-        C[Landing Zone Design & Deployment]
-        D[Solution Development]
-        E[Operations & Handover]
-    end
+graph LR
+    A["**Engagement Kickoff**:
+    Align on goals, scope, roles, and communications"] --> B["**Define the AI Strategy**:
+    Identify AI use cases, plan technology & data strategy"] --> C["Build AI Ready foundations:
+    Establish networking, reliability, security, and governance"] --> D["**Deploy AI Workload**:
+    Set up data pipelines, build and deploy the AI solution, and ensure security & compliance."] --> E["**Operations & Handover**:
+    Transition operations, monitor security, review outcomes"]
 
-    subgraph Support["Ongoing Activities"]
-        F[Communication & Governance]
-    end
-
-    A --> B --> C --> D --> E
-    A & B & C & D & E --- F
-
-    subgraph PartnerResp["Partner Responsibilities"]
-        A1["Facilitate kickoff meetings\nEstablish project structure\nSet up collaboration tools"]
-        B1["Draft technology strategies\nDraft data strategies\nConsult on use cases"]
-        C1["Design Azure landing zones\nDeploy landing zone components\nConfigure environments"]
-        D1["Implement data pipelines\nDeploy AI workloads\nSet up monitoring"]
-        E1["Support initial operations\nProvide knowledge transfer\nDocument handover process"]
-        F1["Facilitate governance meetings\nDocument decisions\nManage continuous improvement"]
-    end
-
-    A --- A1
-    B --- B1
-    C --- C1
-    D --- D1
-    E --- E1
-    F --- F1
-
-    classDef process fill:#d4f1f9,stroke:#0072c6,stroke-width:2px;
-    classDef partner fill:#e6ffe6,stroke:#389e34,stroke-width:2px;
-    classDef support fill:#fffbe6,stroke:#faad14,stroke-width:2px;
-
-    class A,B,C,D,E process;
-    class A1,B1,C1,D1,E1,F1 partner;
-    class F,Support support;
 ```
 
 ### 1. Engagement Kickoff
