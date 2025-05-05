@@ -54,37 +54,45 @@ RACI stands for:
 This guide outlines how the Microsoft Partner and customer teams work together throughout the AI on Azure engagement.
 
 ```mermaid
-flowchart LR
-    subgraph Line1[ ]
-        A1[Engagement Kickoff<br>• Partner facilitates<br>• Customer defines goals]
-        B1[Strategy & Planning<br>• Use case ID<br>• Draft strategies<br>• Security reviews]
-        C1[Landing Zone Design & Deployment<br>• Design<br>• Integration<br>• Consult Data/Security]
-        D1[Solution Development<br>• Implementation<br>• Data collaboration<br>• Security reviews<br>• Business informed]
-        E1[Operations & Handover<br>• Support & transfer<br>• IT/Data take over<br>• Security monitors<br>• Business reviews]
+flowchart TB
+    subgraph Process["AI on Azure Implementation Process"]
+        A[1. Engagement Kickoff]
+        B[2. Strategy & Planning]
+        C[3. Landing Zone Design & Deployment]
+        D[4. Solution Development]
+        E[5. Operations & Handover]
     end
-
-    subgraph Line2[ ]
-        F1[Communication & Governance<br>• Joint meetings<br>• Shared docs<br>• Escalation paths]
-        G1[Continuous Improvement<br>• Feedback<br>• Optimization<br>• Lessons learned]
+    
+    subgraph Support["Ongoing Activities"]
+        F[6. Communication & Governance]
     end
-
-    %% Main horizontal flow
-    A1 --> B1 --> C1 --> D1 --> E1
-
-    %% Second line for communication/governance and improvement
-    F1 --> G1
-
-    %% Cross-links for clarity
-    E1 -.-> F1
-    D1 -.-> F1
-    B1 -.-> F1
-    G1 -.-> A1
-
-    %% Styling for clarity
-    classDef main fill:#e6f7ff,stroke:#1890ff,stroke-width:2px;
-    classDef comms fill:#fffbe6,stroke:#faad14,stroke-width:2px;
-    class A1,B1,C1,D1,E1 main;
-    class F1,G1 comms;
+    
+    A --> B --> C --> D --> E
+    A & B & C & D & E --- F
+    
+    subgraph PartnerResp["Partner Responsibilities"]
+        A1["**• Facilitate kickoff meetings**<br>• Establish project structure<br>• Set up collaboration tools"]
+        B1["**• Draft technology strategies**<br>**• Draft data strategies**<br>• Consult on use cases"]
+        C1["**• Design Azure landing zones**<br>**• Deploy landing zone components**<br>**• Configure environments**"]
+        D1["**• Implement data pipelines**<br>**• Develop & deploy AI models**<br>**• Set up monitoring**"]
+        E1["**• Support initial operations**<br>**• Provide knowledge transfer**<br>• Document handover process"]
+        F1["**• Facilitate governance meetings**<br>**• Document decisions**<br>**• Manage continuous improvement**"]
+    end
+    
+    A --- A1
+    B --- B1
+    C --- C1
+    D --- D1
+    E --- E1
+    F --- F1
+    
+    classDef process fill:#d4f1f9,stroke:#0072c6,stroke-width:2px;
+    classDef partner fill:#e6ffe6,stroke:#389e34,stroke-width:2px;
+    classDef support fill:#fffbe6,stroke:#faad14,stroke-width:2px;
+    
+    class A,B,C,D,E process;
+    class A1,B1,C1,D1,E1,F1 partner;
+    class F,Support support;
 ```
 
 ### 1. Engagement Kickoff
