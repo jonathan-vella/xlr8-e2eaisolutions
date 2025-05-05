@@ -56,40 +56,40 @@ This guide outlines how the Microsoft Partner and customer teams work together t
 ```mermaid
 flowchart TB
     subgraph Process["AI on Azure Implementation Process"]
-        A[1. Engagement Kickoff]
-        B[2. Strategy & Planning]
-        C[3. Landing Zone Design & Deployment]
-        D[4. Solution Development]
-        E[5. Operations & Handover]
+        A[Engagement Kickoff]
+        B[Strategy & Planning]
+        C[Landing Zone Design & Deployment]
+        D[Solution Development]
+        E[Operations & Handover]
     end
-    
+
     subgraph Support["Ongoing Activities"]
-        F[6. Communication & Governance]
+        F[Communication & Governance]
     end
-    
+
     A --> B --> C --> D --> E
     A & B & C & D & E --- F
-    
+
     subgraph PartnerResp["Partner Responsibilities"]
-        A1["**• Facilitate kickoff meetings**<br>• Establish project structure<br>• Set up collaboration tools"]
-        B1["**• Draft technology strategies**<br>**• Draft data strategies**<br>• Consult on use cases"]
-        C1["**• Design Azure landing zones**<br>**• Deploy landing zone components**<br>**• Configure environments**"]
-        D1["**• Implement data pipelines**<br>**• Develop & deploy AI models**<br>**• Set up monitoring**"]
-        E1["**• Support initial operations**<br>**• Provide knowledge transfer**<br>• Document handover process"]
-        F1["**• Facilitate governance meetings**<br>**• Document decisions**<br>**• Manage continuous improvement**"]
+        A1["Facilitate kickoff meetings\nEstablish project structure\nSet up collaboration tools"]
+        B1["Draft technology strategies\nDraft data strategies\nConsult on use cases"]
+        C1["Design Azure landing zones\nDeploy landing zone components\nConfigure environments"]
+        D1["Implement data pipelines\nDeploy AI workloads\nSet up monitoring"]
+        E1["Support initial operations\nProvide knowledge transfer\nDocument handover process"]
+        F1["Facilitate governance meetings\nDocument decisions\nManage continuous improvement"]
     end
-    
+
     A --- A1
     B --- B1
     C --- C1
     D --- D1
     E --- E1
     F --- F1
-    
+
     classDef process fill:#d4f1f9,stroke:#0072c6,stroke-width:2px;
     classDef partner fill:#e6ffe6,stroke:#389e34,stroke-width:2px;
     classDef support fill:#fffbe6,stroke:#faad14,stroke-width:2px;
-    
+
     class A,B,C,D,E process;
     class A1,B1,C1,D1,E1,F1 partner;
     class F,Support support;
