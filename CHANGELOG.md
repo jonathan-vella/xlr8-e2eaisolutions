@@ -1,3 +1,10 @@
+---
+layout: default
+title: Changelog
+nav_order: 10
+permalink: /changelog/
+---
+
 # Changelog
 
 All notable changes to the XLR8 E2E Azure AI Solutions workshop documentation will be documented in this file.

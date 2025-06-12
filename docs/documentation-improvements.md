@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Documentation Improvements
-nav_order: 11
+nav_exclude: true
 permalink: /documentation-improvements/
 version: 1.1.0
 last_updated: 2025-06-12

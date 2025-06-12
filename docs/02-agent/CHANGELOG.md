@@ -1,3 +1,9 @@
+---
+layout: default
+title: AI Agent Challenge Changelog
+nav_exclude: true
+---
+
 # AI Agent Challenge Changelog
 
 All notable changes to the AI Agent Challenge documentation will be documented in this file.

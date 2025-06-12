@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Documentation Versioning Guide
-nav_order: 10
+nav_exclude: true
 permalink: /versioning-guide/
 version: 1.1.0
 last_updated: 2025-06-12

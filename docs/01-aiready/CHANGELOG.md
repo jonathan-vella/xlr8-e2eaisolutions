@@ -1,3 +1,9 @@
+---
+layout: default
+title: AI Ready Challenge Changelog
+nav_exclude: true
+---
+
 # AI Ready Challenge Changelog
 
 All notable changes to the AI Ready Challenge documentation will be documented in this file.

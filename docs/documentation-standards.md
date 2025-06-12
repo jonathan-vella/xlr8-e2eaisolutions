@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Documentation Standards
-nav_order: 12
+nav_exclude: true
 version: 1.1.0
 last_updated: 2025-06-12
 tags: [documentation, standards, guidelines]

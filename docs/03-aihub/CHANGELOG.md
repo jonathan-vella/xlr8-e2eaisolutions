@@ -1,3 +1,9 @@
+---
+layout: default
+title: AI Hub Challenge Changelog
+nav_exclude: true
+---
+
 # AI Hub Challenge Changelog
 
 All notable changes to the AI Hub Challenge documentation will be documented in this file.
