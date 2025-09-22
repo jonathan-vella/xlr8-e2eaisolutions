@@ -64,37 +64,37 @@ Understanding when AI Agents are most effective helps in making informed decisio
 
 AI Agents are best suited for the following types of use cases:
 
-### 🎯 **Open-Ended Problems**
+### 🎯 Open-Ended Problems
 
 Allowing the LLM to determine needed steps to complete a task because it can't always be hardcoded into a workflow.
 
-**Examples:**
+Examples:
 
 - Dynamic troubleshooting where the solution path depends on discovered issues
 - Creative problem-solving that requires flexible approaches
 - Research tasks where the investigation path emerges based on findings
 
-### 🔄 **Multi-Step Processes**
+### 🔄 Multi-Step Processes
 
 Tasks that require a level of complexity in which the AI Agent needs to use tools or information over multiple turns instead of single shot retrieval.
 
-**Examples:**
+Examples:
 
 - End-to-end customer onboarding workflows
 - Complex data analysis requiring multiple data sources and analytical steps
 - Document processing pipelines with validation and approval stages
 
-### 📈 **Improvement Over Time**
+### 📈 Improvement Over Time
 
 Tasks where the agent can improve over time by receiving feedback from either its environment or users in order to provide better utility.
 
-**Examples:**
+Examples:
 
 - Personalized recommendation systems that learn from user interactions
 - Quality assurance processes that adapt based on detected patterns
 - Customer service solutions that refine responses based on satisfaction scores
 
-### 💡 **When NOT to Use AI Agents**
+### 💡 When NOT to Use AI Agents
 
 While AI Agents offer powerful capabilities, they may not be the best choice for:
 
@@ -109,22 +109,22 @@ While AI Agents offer powerful capabilities, they may not be the best choice for
 
 There are multiple frameworks and platforms available for building AI agents, each suited for different use cases and skill levels:
 
-### 🏗️ **Professional Development Platforms**
+### 🏗️ Professional Development Platforms
 
 - **Azure AI Foundry Agent Service** - Managed Azure service with enterprise security, multiple models, and data integration
 - **Semantic Kernel** - Open-source SDK for building and orchestrating multi-agent solutions
 - **Microsoft 365 Agents SDK** - Self-hosted agents for various channels (Teams, Slack, Messenger)
 
-### 🔬 **Research & Experimentation**
+### 🔬 Research & Experimentation
 
 - **AutoGen** - Open-source framework for rapid agent prototyping and research
 
-### 👥 **Low-Code & Business User Solutions**
+### 👥 Low-Code & Business User Solutions
 
 - **Microsoft Copilot Studio** - Visual, low-code environment for citizen developers
 - **Copilot Studio Agent Builder** - Declarative agent creation for business users with no coding experience
 
-### 🎯 **Choosing the Right Platform**
+### 🎯 Choosing the Right Platform
 
 - **Business Users** → Copilot Studio Agent Builder for simple declarative agents
 - **Citizen Developers** → Microsoft Copilot Studio for low-code solutions
@@ -137,19 +137,19 @@ There are multiple frameworks and platforms available for building AI agents, ea
 
 **Function calling** is the fundamental capability that enables Agentic AI systems. It allows Large Language Models to interact with external tools, APIs, and systems, transforming them from simple text generators into intelligent agents capable of taking actions in the real world.
 
-### 🔧 **What is Function/Tool Calling?**
+### 🔧 What is Function/Tool Calling?
 
 Function calling is the primary mechanism that enables Large Language Models (LLMs) to interact with tools. The terms 'Function' and 'Tool' are often used interchangeably because 'functions' (reusable blocks of code) are the 'tools' agents use to perform tasks.
 
 For a function to be executed, the LLM compares the user's request against the function's description. A schema containing descriptions of all available functions is sent to the LLM. The LLM then selects the most appropriate function for the task and returns its name and arguments. The selected function is executed, its response is sent back to the LLM, and the LLM uses this information to respond to the user's request.
 
-### **Core Elements Required for Function Calling:**
+### Core Elements Required for Function Calling:
 
 1. **An LLM model that supports function calling** - Not all models support this capability
 2. **A schema containing function descriptions** - Detailed definitions including function name, purpose, required parameters, and expected outputs
 3. **The code for each described function** - Actual implementation that performs the task
 
-### **How Function Calling Enables Agents:**
+### How Function Calling Enables Agents:
 
 - **Tool Integration** - Agents can invoke external functions, APIs, and services
 - **Action Execution** - Move beyond text generation to perform concrete tasks  
@@ -162,20 +162,20 @@ Function calling bridges the gap between AI reasoning and practical implementati
 
 **Model Context Protocol (MCP)** is an open standard that enables secure, controlled connections between AI applications and external data sources and tools. Created by Anthropic, MCP addresses the challenge of AI systems needing access to various data sources while maintaining security and standardization.
 
-### 🔗 **What MCP Enables:**
+### 🔗 What MCP Enables:
 
 - **Standardized Integration** - Unified protocol for connecting AI models to databases, APIs, and tools
 - **Secure Access** - Controlled, permission-based access to sensitive data and systems
 - **Interoperability** - Works across different AI platforms and applications
 - **Simplified Development** - Reduces complexity of building AI integrations
 
-### **Key MCP Components:**
+### Key MCP Components:
 
 - **MCP Servers** - Expose resources (data, tools, prompts) to AI applications
 - **MCP Clients** - AI applications that consume MCP server resources
 - **Protocol Standards** - Defined interfaces for secure communication
 
-### **Deployment Options:**
+### Deployment Options:
 
 - **Localhost** - Run MCP servers locally for development, testing, and personal use
 - **Remote** - Deploy MCP servers to cloud or enterprise environments for production and team collaboration
@@ -190,7 +190,7 @@ Function calling and MCP complement each other to enable powerful, secure AI age
 
 Together, they form the backbone of modern agentic AI systems, enabling intelligent, autonomous agents that can perform complex tasks while adhering to security and integration best practices.
 
-## ![Diagram illustrating function calling with MCP](../../assets/diagrams/FunctionCallingWithMCP.jpg)
+![Diagram illustrating function calling with MCP](../../assets/diagrams/FunctionCallingWithMCP.jpg)
 
 *Figure: Visual overview of how function calling and Model Context Protocol (MCP) work together to enable secure, standardized tool integration for AI agents. The diagram shows the flow from user request, through LLM function selection, to secure tool invocation via MCP.*
 
@@ -220,7 +220,7 @@ Regardless of which orchestration pattern you choose, the Semantic Kernel SDK pr
 
 Because all patterns share the same core interface, you can easily experiment with different orchestration strategies without rewriting agent logic or learning new APIs. The SDK abstracts the complexity of agent communication, coordination, and result aggregation so you can focus on designing workflows that deliver results.
 
-#### 1. **Sequential Orchestration**
+#### 1. Sequential Orchestration
 
 Chains AI agents in a predefined, linear order where each agent processes output from the previous agent.
 
@@ -228,7 +228,7 @@ Chains AI agents in a predefined, linear order where each agent processes output
 - **Examples:** Document processing pipelines, progressive refinement workflows
 - **Link:** [Sequential Orchestration Pattern](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns#sequential-orchestration)
 
-#### 2. **Concurrent Orchestration**
+#### 2. Concurrent Orchestration
 
 Runs multiple AI agents simultaneously on the same task, allowing independent analysis from different perspectives.
 
@@ -236,7 +236,7 @@ Runs multiple AI agents simultaneously on the same task, allowing independent an
 - **Examples:** Multi-perspective analysis, ensemble reasoning, voting-based decisions
 - **Link:** [Concurrent Orchestration Pattern](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns#concurrent-orchestration)
 
-#### 3. **Group Chat Orchestration**
+#### 3. Group Chat Orchestration
 
 Enables multiple agents to collaborate through shared conversation threads with a chat manager coordinating the flow.
 
@@ -244,7 +244,7 @@ Enables multiple agents to collaborate through shared conversation threads with 
 - **Examples:** Creative ideation, maker-checker loops, consensus building
 - **Link:** [Group Chat Orchestration Pattern](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns#group-chat-orchestration)
 
-#### 4. **Handoff Orchestration**
+#### 4. Handoff Orchestration
 
 Enables dynamic delegation of tasks between specialized agents based on context and requirements.
 
@@ -252,21 +252,13 @@ Enables dynamic delegation of tasks between specialized agents based on context 
 - **Examples:** Customer support escalation, specialized expertise routing
 - **Link:** [Handoff Orchestration Pattern](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns#handoff-orchestration)
 
-#### 5. **Magentic Orchestration**
 
-Designed for open-ended problems where agents build and refine task plans dynamically through collaboration.
-
-- **Best for:** Complex problems without predetermined solution paths
-- **Examples:** Incident response automation, adaptive problem-solving
-- **Link:** [Magentic Orchestration Pattern](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns#magentic-orchestration)
-
-#### **Choosing the Right Pattern:**
+#### Choosing the Right Pattern:
 
 - **Sequential** → Use when tasks follow a clear step-by-step order
 - **Concurrent** → Use when you need multiple viewpoints or faster processing
 - **Group Chat** → Use for team collaboration and validation workflows
 - **Handoff** → Use when the best agent depends on the specific context
-- **Magentic** → Use for complex problems without a predetermined approach
 
 *Reference: 
 - [Azure AI Agent Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns)*
@@ -279,7 +271,7 @@ Designed for open-ended problems where agents build and refine task plans dynami
 
 This step established the foundational knowledge needed to design and implement effective agentic AI systems for the IFS challenge. Here are the key takeaways:
 
-### **Core Concepts Covered:**
+### Core Concepts Covered:
 
 🤖 **Agentic AI Definition** - Autonomous systems that plan, execute, and coordinate complex workflows beyond simple query responses
 
@@ -298,7 +290,7 @@ This step established the foundational knowledge needed to design and implement 
 - **Handoff** for dynamic routing
 - **Magentic** for adaptive problem-solving
 
-### **Key Insights for IFS Implementation:**
+### Key Insights for IFS Implementation:
 
 - **Start with Clear Use Cases** - Identify specific IFS scenarios that benefit from agent capabilities
 - **Choose the Right Pattern** - Match orchestration patterns to your workflow requirements
