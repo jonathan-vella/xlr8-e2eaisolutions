@@ -58,322 +58,255 @@ flowchart LR
 
 ---
 
-## Core Agentic AI Principles
+## When to Use AI Agents?
 
-### 1. **Automated Collections of Tasks**
-* Agents orchestrate multiple steps in sequence to achieve goals
-* Coordinate entire workflows rather than individual actions
-* Maintain context across sequential operations
+Understanding when AI Agents are most effective helps in making informed decisions about when to implement agentic solutions versus traditional AI approaches.
 
-### 2. **Domain Knowledge Processing**
-* Internalize and apply specialized knowledge bases
-* Navigate complex information landscapes within focused domains
-* Extract, synthesize, and interpret domain-specific information  
+AI Agents are best suited for the following types of use cases:
 
-### 3. **Summarization & Critical Analysis**
-* Aggregate large volumes of information into concise insights
-* Identify significant patterns and outliers
-* Synthesize conflicting viewpoints into coherent analyses
+### 🎯 **Open-Ended Problems**
 
-### 4. **Planning & Strategy Generation**
-* Break down complex goals into sequenced action plans
-* Anticipate contingencies with alternative approaches
-* Balance execution speed vs. thoroughness tradeoffs
+Allowing the LLM to determine needed steps to complete a task because it can't always be hardcoded into a workflow.
 
-### 5. **Audience-Aware Content Generation**
-* Adapt communication style to recipient needs
-* Create outputs with appropriate depth, terminology, and format
-* Recognize and respect audience boundaries and limitations
+**Examples:**
 
-### 6. **Continuous Learning & Adaptation**
-* Refine approaches based on success/failure patterns
-* Update internal knowledge from interactions
-* Progressive capability expansion over time
+- Dynamic troubleshooting where the solution path depends on discovered issues
+- Creative problem-solving that requires flexible approaches
+- Research tasks where the investigation path emerges based on findings
 
----
+### 🔄 **Multi-Step Processes**
 
-## Multi-Agent Architecture Patterns
+Tasks that require a level of complexity in which the AI Agent needs to use tools or information over multiple turns instead of single shot retrieval.
 
-When designing agentic AI systems, several architectural patterns enable effective collaboration and specialization among multiple agents:
+**Examples:**
 
-### 1. **Hub-and-Spoke Pattern**
-* **Central coordinator** agent directs specialized worker agents
-* Simplifies workflow orchestration and responsibility delegation
-* Creates clear accountability and coordination model
+- End-to-end customer onboarding workflows
+- Complex data analysis requiring multiple data sources and analytical steps
+- Document processing pipelines with validation and approval stages
 
-```mermaid
-graph TD
-    A[Hub Agent] --> B[Specialist 1]
-    A --> C[Specialist 2]
-    A --> D[Specialist 3]
-    A --> E[Specialist 4]
-    
-    classDef hub fill:#ff9900,color:white;
-    classDef spoke fill:#0072c6,color:white;
-    
-    class A hub;
-    class B,C,D,E spoke;
-```
+### 📈 **Improvement Over Time**
 
-**Example:** Customer service supervisor (hub) routing inquiries to specialized representatives (spokes) based on query type.
+Tasks where the agent can improve over time by receiving feedback from either its environment or users in order to provide better utility.
 
-### 2. **Assembly Line Pattern**
-* Sequential processing between specialized agents
-* Each agent has specific capability focus
-* Output of one agent becomes input for next agent
+**Examples:**
 
-```mermaid
-graph LR
-    A[Agent 1: <br>Data Collection] --> B[Agent 2: <br>Analysis]
-    B --> C[Agent 3: <br>Insight Generation]
-    C --> D[Agent 4: <br>Content Creation]
-    
-    classDef agent fill:#0072c6,color:white;
-    class A,B,C,D agent;
-```
+- Personalized recommendation systems that learn from user interactions
+- Quality assurance processes that adapt based on detected patterns
+- Customer service solutions that refine responses based on satisfaction scores
 
-**Example:** Legal document processing where specialists sequentially handle research, case analysis, brief drafting, and final review.
+### 💡 **When NOT to Use AI Agents**
 
-### 3. **Peer Network Pattern**
-* Equal-authority agents collaborate on common problems
-* Enables parallel processing of different tasks
-* Flexible communication pathways between all agents
+While AI Agents offer powerful capabilities, they may not be the best choice for:
 
-```mermaid
-graph TD
-    A[Agent 1] --- B[Agent 2]
-    A --- C[Agent 3]
-    A --- D[Agent 4]
-    B --- C
-    B --- D
-    C --- D
-    
-    classDef agent fill:#0072c6,color:white;
-    class A,B,C,D agent;
-```
-
-**Example:** Cross-functional product team with engineering, design, marketing, and customer success experts collaborating on product improvement.
-
-### 4. **Hierarchical Pattern**
-* Multi-level supervision and delegation
-* Strategic planning at higher levels, tactical execution at lower levels
-* Clear chain of command with escalation paths
-
-```mermaid
-graph TD
-    A[Executive Agent] --> B[Manager Agent 1]
-    A --> C[Manager Agent 2]
-    B --> D[Worker Agent 1]
-    B --> E[Worker Agent 2]
-    C --> F[Worker Agent 3]
-    C --> G[Worker Agent 4]
-    
-    classDef exec fill:#ff0000,color:white;
-    classDef manager fill:#ff9900,color:white;
-    classDef worker fill:#0072c6,color:white;
-    
-    class A exec;
-    class B,C manager;
-    class D,E,F,G worker;
-```
-
-**Example:** Corporate structure with strategic decisions at executive level, tactical planning at management level, and execution at worker level.
+- **Simple, deterministic tasks** - Use traditional automation for straightforward, rule-based processes
+- **Real-time, low-latency requirements** - Consider direct API calls or cached responses for immediate responses
+- **High-risk, safety-critical operations** - Ensure human oversight for mission-critical decisions
+- **Limited data scenarios** - Traditional ML models may perform better with constrained datasets
 
 ---
 
-## Common Agent Roles
+## Which are the options for Agent Development?
 
-Agentic AI systems often employ specialized agents with defined roles:
+There are multiple frameworks and platforms available for building AI agents, each suited for different use cases and skill levels:
 
-### 1. **Planner/Orchestrator Agent**
-* Plans overall workflow sequence
-* Coordinates other agents' activities
-* Maintains global context and goal alignment
+### 🏗️ **Professional Development Platforms**
 
-### 2. **Research/Retrieval Agent**
-* Gathers and organizes information
-* Searches databases, knowledge bases, and documents
-* Transforms unstructured data into usable context
+- **Azure AI Foundry Agent Service** - Managed Azure service with enterprise security, multiple models, and data integration
+- **Semantic Kernel** - Open-source SDK for building and orchestrating multi-agent solutions
+- **Microsoft 365 Agents SDK** - Self-hosted agents for various channels (Teams, Slack, Messenger)
 
-### 3. **Reasoning/Analysis Agent**
-* Applies logical inference
-* Identifies patterns and insights
-* Evaluates alternative approaches
+### 🔬 **Research & Experimentation**
 
-### 4. **Creation/Generation Agent**
-* Produces new content and artifacts
-* Converts analytical insights into actionable outputs
-* Designs solutions based on requirements
+- **AutoGen** - Open-source framework for rapid agent prototyping and research
 
-### 5. **Verification/QA Agent**
-* Validates outputs against requirements
-* Identifies errors or inconsistencies
-* Ensures quality standards are met
+### 👥 **Low-Code & Business User Solutions**
 
-### 6. **User Interaction Agent**
-* Manages direct communication with humans
-* Translates between technical and user-friendly language
-* Gathers feedback and clarification
+- **Microsoft Copilot Studio** - Visual, low-code environment for citizen developers
+- **Copilot Studio Agent Builder** - Declarative agent creation for business users with no coding experience
+
+### 🎯 **Choosing the Right Platform**
+
+- **Business Users** → Copilot Studio Agent Builder for simple declarative agents
+- **Citizen Developers** → Microsoft Copilot Studio for low-code solutions
+- **Professional Developers** → Azure AI Foundry Agent Service for enterprise solutions
+- **Multi-Agent Systems** → Semantic Kernel for orchestration and complex workflows
 
 ---
 
-## RAG Architectural Patterns for Agents
+## Who is the Core Enabler for Agentic AI? -> Function calling
 
-Retrieval-Augmented Generation (RAG) integrates with agentic architectures in several ways:
+**Function calling** is the fundamental capability that enables Agentic AI systems. It allows Large Language Models to interact with external tools, APIs, and systems, transforming them from simple text generators into intelligent agents capable of taking actions in the real world.
 
-### 1. **Multi-Stage RAG Pattern**
+### 🔧 **What is Function/Tool Calling?**
 
-```mermaid
-flowchart LR
-    subgraph "Agent Pipeline"
-        direction LR
-        A[Query Understanding<br>Agent] --> B[Retrieval<br>Agent]
-        B --> C[Synthesis<br>Agent]
-        C --> D[Response<br>Agent]
-    end
-    
-    B <-.-> E[(Knowledge<br>Sources)]
-    
-    classDef agent fill:#0072c6,color:white;
-    classDef kb fill:#ff9900,color:white;
-    
-    class A,B,C,D agent;
-    class E kb;
-```
+Function calling is the primary mechanism that enables Large Language Models (LLMs) to interact with tools. The terms 'Function' and 'Tool' are often used interchangeably because 'functions' (reusable blocks of code) are the 'tools' agents use to perform tasks.
 
-* **Decomposition:** Query is broken down into components
-* **Multiple retrievals:** Different knowledge sources consulted
-* **Progressive refinement:** Information aggregated across stages
+For a function to be executed, the LLM compares the user's request against the function's description. A schema containing descriptions of all available functions is sent to the LLM. The LLM then selects the most appropriate function for the task and returns its name and arguments. The selected function is executed, its response is sent back to the LLM, and the LLM uses this information to respond to the user's request.
 
-### 2. **Recursive RAG Pattern**
+### **Core Elements Required for Function Calling:**
 
-```mermaid
-flowchart TD
-    A[Initial Query] --> B[Planning Agent]
-    B --> C{Need more<br>information?}
-    C -->|Yes| D[Retrieval Agent]
-    D --> E[(Knowledge<br>Base)]
-    E --> B
-    C -->|No| F[Response<br>Generation]
-    
-    classDef agent fill:#0072c6,color:white;
-    classDef kb fill:#ff9900,color:white;
-    classDef flow fill:#d4d4d4,color:black;
-    
-    class B,D,F agent;
-    class E kb;
-    class A,C flow;
-```
+1. **An LLM model that supports function calling** - Not all models support this capability
+2. **A schema containing function descriptions** - Detailed definitions including function name, purpose, required parameters, and expected outputs
+3. **The code for each described function** - Actual implementation that performs the task
 
-* **Iterative improvement:** Agents recursively refine their knowledge
-* **Self-guided research:** System determines what additional information is needed
-* **Depth exploration:** Continues until confidence threshold reached
+### **How Function Calling Enables Agents:**
 
-### 3. **Parallel RAG Pattern**
+- **Tool Integration** - Agents can invoke external functions, APIs, and services
+- **Action Execution** - Move beyond text generation to perform concrete tasks  
+- **Dynamic Workflows** - Chain multiple function calls to complete complex processes
+- **Real-World Impact** - Interact with databases, send emails, process files, and more
 
-```mermaid
-flowchart TD
-    A[Query] --> B[Orchestrator<br>Agent]
-    
-    B --> C[Topic Agent 1]
-    B --> D[Topic Agent 2]
-    B --> E[Topic Agent 3]
-    
-    C <-.-> F[(Knowledge<br>Source 1)]
-    D <-.-> G[(Knowledge<br>Source 2)]
-    E <-.-> H[(Knowledge<br>Source 3)]
-    
-    C --> I[Synthesis<br>Agent]
-    D --> I
-    E --> I
-    
-    classDef agent fill:#0072c6,color:white;
-    classDef kb fill:#ff9900,color:white;
-    classDef flow fill:#d4d4d4,color:black;
-    
-    class B,C,D,E,I agent;
-    class F,G,H kb;
-    class A flow;
-```
+Function calling bridges the gap between AI reasoning and practical implementation, making truly autonomous and useful AI agents possible.
 
-* **Specialized knowledge domains:** Different agents handle different topics
-* **Concurrent processing:** Multiple retrievals happen simultaneously
-* **Comprehensive coverage:** Ensures broad knowledge incorporation
+## What Standard Enables AI Agent Tool Integration? -> Model Context Protocol (MCP)
+
+**Model Context Protocol (MCP)** is an open standard that enables secure, controlled connections between AI applications and external data sources and tools. Created by Anthropic, MCP addresses the challenge of AI systems needing access to various data sources while maintaining security and standardization.
+
+### 🔗 **What MCP Enables:**
+
+- **Standardized Integration** - Unified protocol for connecting AI models to databases, APIs, and tools
+- **Secure Access** - Controlled, permission-based access to sensitive data and systems
+- **Interoperability** - Works across different AI platforms and applications
+- **Simplified Development** - Reduces complexity of building AI integrations
+
+### **Key MCP Components:**
+
+- **MCP Servers** - Expose resources (data, tools, prompts) to AI applications
+- **MCP Clients** - AI applications that consume MCP server resources
+- **Protocol Standards** - Defined interfaces for secure communication
+
+### **Deployment Options:**
+
+- **Localhost** - Run MCP servers locally for development, testing, and personal use
+- **Remote** - Deploy MCP servers to cloud or enterprise environments for production and team collaboration
+
+MCP makes it easier to build robust, secure AI agent systems that can reliably access the data and tools they need to function effectively.
+
+## How Function Calling and MCP Work Together
+
+Function calling and MCP complement each other to enable powerful, secure AI agents:
+- **Function Calling** allows LLMs to specify the actions and tools to be called based on user requests
+- **MCP** provides a standardized, secure way for those functions to access external data and services
+
+Together, they form the backbone of modern agentic AI systems, enabling intelligent, autonomous agents that can perform complex tasks while adhering to security and integration best practices.
+
+## ![Diagram illustrating function calling with MCP](../../assets/diagrams/FunctionCallingWithMCP.jpg)
+
+*Figure: Visual overview of how function calling and Model Context Protocol (MCP) work together to enable secure, standardized tool integration for AI agents. The diagram shows the flow from user request, through LLM function selection, to secure tool invocation via MCP.*
 
 ---
 
-## Specialized Agent Types
+## Multi-Agent Architecture Patterns and Semantic Kernel
 
-When designing agentic systems, consider these specialized agent patterns:
+When designing agentic AI systems, several proven orchestration patterns enable effective collaboration and specialization among multiple agents. Each pattern addresses different coordination requirements and workflow characteristics.
 
-### 1. **Tool-Using Agents**
+With the Semantic Kernel SDK's agent orchestration framework, it is possible to design, manage, and scale complex multi-agent workflows without having to manually handle the details of agent coordination. Instead of relying on a single agent to manage every aspect of a task, you can combine multiple specialized agents. Each agent with a unique role or area of expertise can collaborate to create systems that are more robust, adaptive, and capable of solving real-world problems collaboratively.
 
-```mermaid
-flowchart LR
-    A[User<br>Request] --> B[Tool-Using<br>Agent]
-    B -->|Call| C[Database<br>API]
-    B -->|Call| D[Search<br>API]
-    B -->|Call| E[Weather<br>Service]
-    B -->|Call| F[Calculator<br>Function]
-    
-    C & D & E & F --> B
-    B --> G[Response]
-    
-    classDef agent fill:#0072c6,color:white;
-    classDef tool fill:#ff9900,color:white;
-    classDef flow fill:#d4d4d4,color:black;
-    
-    class B agent;
-    class C,D,E,F tool;
-    class A,G flow;
-```
+### Why multi-agent orchestration matters
+Single-agent systems are often limited in scope, constrained by one set of instructions or a single model prompt. Multi-agent orchestration addresses this limitation by allowing you to:
 
-* Integrate with external systems and APIs
-* Leverage specialized functions through defined interfaces
-* Extend capabilities beyond built-in AI functions
+- Assign distinct skills, responsibilities, or perspectives to each agent.
+- Combine outputs from multiple agents to improve decision-making and accuracy.
+- Coordinate steps in a workflow so each agent’s work builds on the last.
+- Dynamically route control between agents based on context or rules.
 
-### 2. **Memory-Augmented Agents**
+This approach opens the door to more flexible, efficient, and scalable solutions, especially for real-world applications that require collaboration, specialization, or redundancy.
 
-```mermaid
-flowchart TD
-    A[User<br>Query] --> B[Agent]
-    B <-->|Store/Retrieve| C[(Short-term<br>Memory)]
-    B <-->|Store/Retrieve| D[(Long-term<br>Memory)]
-    B --> E[Response]
-    
-    classDef agent fill:#0072c6,color:white;
-    classDef memory fill:#ff9900,color:white;
-    classDef flow fill:#d4d4d4,color:black;
-    
-    class B agent;
-    class C,D memory;
-    class A,E flow;
-```
+### Multi-Agent Architecture Patterns
 
-* Maintain conversation context across interactions
-* Store and retrieve relevant historical information
-* Build knowledge graphs from accumulated interactions
+Semantic Kernel provides several orchestration patterns directly in the SDK, each offering a different approach to coordinating agents. These patterns are designed to be technology-agnostic so you can adapt them to your own domain and integrate them into your existing systems.
 
-### 3. **Reflective Agents**
+Regardless of which orchestration pattern you choose, the Semantic Kernel SDK provides a consistent, developer-friendly interface for building and running them. The typical flow looks like this:
 
-```mermaid
-flowchart TD
-    A[Task] --> B[Planning<br>Agent]
-    B --> C[Execution<br>Agent]
-    C --> D[Output]
-    D --> E[Evaluation<br>Agent]
-    E -->|Feedback| B
-    
-    classDef agent fill:#0072c6,color:white;
-    classDef flow fill:#d4d4d4,color:black;
-    
-    class B,C,E agent;
-    class A,D flow;
-```
+Because all patterns share the same core interface, you can easily experiment with different orchestration strategies without rewriting agent logic or learning new APIs. The SDK abstracts the complexity of agent communication, coordination, and result aggregation so you can focus on designing workflows that deliver results.
 
-* Critique their own outputs
-* Iteratively improve responses through self-evaluation
-* Implement internal testing and validation
+#### 1. **Sequential Orchestration**
+
+Chains AI agents in a predefined, linear order where each agent processes output from the previous agent.
+
+- **Best for:** Step-by-step processing with clear dependencies
+- **Examples:** Document processing pipelines, progressive refinement workflows
+- **Link:** [Sequential Orchestration Pattern](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns#sequential-orchestration)
+
+#### 2. **Concurrent Orchestration**
+
+Runs multiple AI agents simultaneously on the same task, allowing independent analysis from different perspectives.
+
+- **Best for:** Tasks requiring diverse insights, time-sensitive parallel processing
+- **Examples:** Multi-perspective analysis, ensemble reasoning, voting-based decisions
+- **Link:** [Concurrent Orchestration Pattern](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns#concurrent-orchestration)
+
+#### 3. **Group Chat Orchestration**
+
+Enables multiple agents to collaborate through shared conversation threads with a chat manager coordinating the flow.
+
+- **Best for:** Collaborative brainstorming, structured validation, quality control processes
+- **Examples:** Creative ideation, maker-checker loops, consensus building
+- **Link:** [Group Chat Orchestration Pattern](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns#group-chat-orchestration)
+
+#### 4. **Handoff Orchestration**
+
+Enables dynamic delegation of tasks between specialized agents based on context and requirements.
+
+- **Best for:** Dynamic routing when optimal agent isn't known upfront
+- **Examples:** Customer support escalation, specialized expertise routing
+- **Link:** [Handoff Orchestration Pattern](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns#handoff-orchestration)
+
+#### 5. **Magentic Orchestration**
+
+Designed for open-ended problems where agents build and refine task plans dynamically through collaboration.
+
+- **Best for:** Complex problems without predetermined solution paths
+- **Examples:** Incident response automation, adaptive problem-solving
+- **Link:** [Magentic Orchestration Pattern](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns#magentic-orchestration)
+
+#### **Choosing the Right Pattern:**
+
+- **Sequential** → Use when tasks follow a clear step-by-step order
+- **Concurrent** → Use when you need multiple viewpoints or faster processing
+- **Group Chat** → Use for team collaboration and validation workflows
+- **Handoff** → Use when the best agent depends on the specific context
+- **Magentic** → Use for complex problems without a predetermined approach
+
+*Reference: 
+- [Azure AI Agent Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns)*
+- [Semantic Kernel Agent Orchestration](https://learn.microsoft.com/en-us/semantic-kernel/frameworks/agent/agent-orchestration/?pivots=programming-language-csharp)*
+### Semantic Kernel provides a unified orchestration workflow
+
+---
+
+## Summary
+
+This step established the foundational knowledge needed to design and implement effective agentic AI systems for the IFS challenge. Here are the key takeaways:
+
+### **Core Concepts Covered:**
+
+🤖 **Agentic AI Definition** - Autonomous systems that plan, execute, and coordinate complex workflows beyond simple query responses
+
+🎯 **When to Use AI Agents** - Best suited for open-ended problems, multi-step processes, and scenarios requiring improvement over time
+
+🛠️ **Development Options** - Multiple platforms available from low-code (Copilot Studio) to enterprise solutions (Azure AI Foundry Agent Service and Semantic Kernel)
+
+⚡ **Function Calling** - The fundamental enabler that allows LLMs to interact with external tools, APIs, and systems
+
+🔗 **Model Context Protocol (MCP)** - Open standard for secure, standardized connections between AI applications and external resources
+
+🏗️ **Architecture Patterns** - Five proven orchestration patterns for multi-agent coordination:
+- **Sequential** for linear workflows
+- **Concurrent** for parallel processing  
+- **Group Chat** for collaborative discussion
+- **Handoff** for dynamic routing
+- **Magentic** for adaptive problem-solving
+
+### **Key Insights for IFS Implementation:**
+
+- **Start with Clear Use Cases** - Identify specific IFS scenarios that benefit from agent capabilities
+- **Choose the Right Pattern** - Match orchestration patterns to your workflow requirements
+- **Select the Technology SDK and Tools** - Choose development platforms (Azure AI Foundry, Semantic Kernel, etc.) and determine which functions and APIs your agents will need to access
+- **Plan for Integration** - Consider how agents will connect to IFS systems using MCP standards
+- **Design for Specialization** - Create focused agents rather than monolithic solutions
+
+You're now ready to apply these principles to define functional requirements for the IFS AI Agent solution in Step 2.
 
 ---
 
