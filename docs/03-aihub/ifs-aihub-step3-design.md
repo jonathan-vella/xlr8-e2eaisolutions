@@ -58,8 +58,7 @@ Define the architecture, controls, and Azure services needed for a robust, secur
   1. **Architecture:** Draw a high-level architecture diagram showing the AI Hub architecture.
   2. **Service Selection:** List Azure services that will be part of the AI Hub.  3. **Network Security:** Detail the network design including VNets, subnets, NSGs, and private endpoints.
   
-  > [!IMPORTANT]
-  > Ensure your network design includes private endpoints for all Azure AI services to maintain data security and comply with data residency requirements. This is particularly critical for AI services that process sensitive information.
+  ⚠️ **Important:** Ensure your network design includes private endpoints for all Azure AI services to maintain data security and comply with data residency requirements. This is particularly critical for AI services that process sensitive information.
   
   4. **Identity & Access:** Define the identity model, service principals, managed identities, and RBAC.
   5. **Cost Controls:** Design the approach for cost tagging, budgets, and alerts.
@@ -72,8 +71,7 @@ Define the architecture, controls, and Azure services needed for a robust, secur
 
 ## Guidance
 
-> [!TIP]
-> Start with a high-level architecture diagram that shows the main components of your AI Hub, then drill down into specific areas such as networking, security, and service deployment.
+💡 **TIP** Start with a high-level architecture diagram that shows the main components of your AI Hub, then drill down into specific areas such as networking, security, and service deployment.
 
 > **Best Practice:** Reference the [Azure OpenAI baseline Landing Zone reference architecture](https://learn.microsoft.com/azure/architecture/ai-ml/architecture/azure-openai-baseline-landing-zone) and apply these principles to your broader AI Hub design.
 >
@@ -200,8 +198,7 @@ To successfully complete this step, your design should provide a complete techni
 
 ## Navigation
 
-> [!WARNING]
-> Before moving to Step 4, ensure your architecture design addresses all the requirements identified in Step 2, including security, governance, and operational considerations.
+⚠️ **WARNING** Before moving to Step 4, ensure your architecture design addresses all the requirements identified in Step 2, including security, governance, and operational considerations.
 
 - [⬅️ Previous: Step 2 - Requirements](./ifs-aihub-step2-requirements.md)
 - [Next: Step 4 - Present ➡️](./ifs-aihub-step4-present.md)

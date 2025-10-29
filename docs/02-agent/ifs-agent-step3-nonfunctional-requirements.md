@@ -46,7 +46,7 @@ Capture all critical requirements—business, technical, security, compliance, a
   1. **🏆 Business Requirements:** What must the solution achieve for IFS to consider it a success?
   2. **⚙️ Technical Requirements:** What are the key technical needs?
   3. **🛡️ Security & Compliance:** What security, privacy, and compliance standards must be met?
-  4. **Operational Requirements:** What are the support, monitoring, and management needs?
+  4. **⚙️ Operational Requirements:** What are the support, monitoring, and management needs?
 
 ---
 

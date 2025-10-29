@@ -42,8 +42,7 @@ flowchart LR
 
 ## 🧰 Prerequisites
 
-> [!NOTE]
-> This step requires collaborative input from multiple teams. Schedule your design workshops in advance to ensure all key stakeholders can participate.
+📝 **Note:** This step requires collaborative input from multiple teams. Schedule your design workshops in advance to ensure all key stakeholders can participate.
 
 What you need before starting:
 
@@ -51,9 +50,9 @@ What you need before starting:
 - **Key team representatives** available for design discussions
 - **Basic understanding of current Azure setup** (if any exists)
 - **Requirements from Step 2** as input for design decisions
+- **Access to architecture documentation** (if available)
 
 [🔝 Back to Top](#step-3-ai-platform-design)
-- **Access to architecture documentation** (if available)
 
 ---
 
@@ -88,8 +87,7 @@ Teams using ALZ consistently report:
 
 ### Essential Foundation Components
 
-> [!WARNING]
-> Skipping or bypassing the Azure Landing Zone components below can lead to significant security vulnerabilities, compliance gaps, and operational challenges that are costly and time-consuming to remediate later.
+⚠️ **Warning:** Omitting or overlooking the Azure Landing Zone components below can introduce serious security risks, compliance issues, cost overruns, and operational challenges that are difficult and expensive to fix later.
 
 The following ALZ components are **foundational** for IFS AI success:
 
@@ -151,8 +149,7 @@ Define a scalable, secure, and governed AI Ready Azure Landing Zone architecture
 
 **Teams work together** to design the ALZ foundation that supports everyone's needs. This collaborative approach ensures successful AI deployment.
 
-> [!TIP]
-> Use a visual collaboration tool like Microsoft Whiteboard or Miro for the design sessions to make it easier for remote participants to contribute effectively.
+💡 **TIP** Use a visual collaboration tool like Microsoft Whiteboard or Miro for the design sessions to make it easier for remote participants to contribute effectively.
 
 ### Design Workshop Process (Recommended 2-3 Sessions)
 
@@ -262,8 +259,7 @@ Define a scalable, secure, and governed AI Ready Azure Landing Zone architecture
 > - Use Azure Policy and Azure Blueprints for repeatable landing zone deployment.
 > - Set up monitoring and alerting with Log Analytics workspaces.
 >
-> [!IMPORTANT]
-> For AI workloads, set up dedicated Log Analytics workspaces that collect comprehensive telemetry from both infrastructure components and AI services. This is crucial for end-to-end monitoring and AI-specific operational insights.
+🚨 **IMPORTANT** For AI workloads, collecting comprehensive telemetry in a centralized Log Analytics workspace from both infrastructure components and AI services is crucial for end-to-end monitoring and AI-specific operational insights.
 
 **Example Landing Zone Architecture Table:**
 
@@ -297,11 +293,11 @@ Define a scalable, secure, and governed AI Ready Azure Landing Zone architecture
 
 To successfully complete this step, you must produce:
 
-✅ **Management group and subscription layout diagram** - Validated by Infrastructure and Security teams  
-✅ **Policy baseline assignments** covering regulatory & compliance controls  
-✅ **Network topology diagram** showing secure connectivity - Confirmed by Network team  
-✅ **Identity and access plan** with least-privileged operations - Validated by Security team  
-✅ **Operational readiness plan** with monitoring, management, automation - Confirmed by Operations team
+- ✓ **Management group and subscription layout diagram** accounting for platform vs application zones
+- ✓ **Policy baseline assignments** covering tagging, regulatory & compliance controls
+- ✓ **Network topology diagram** showing secure connectivity
+- ✓ **Identity and access plan** with least-privileged operations
+- ✓ **Operational readiness plan** with monitoring, management, and automation
 
 ### Team Validation Process
 

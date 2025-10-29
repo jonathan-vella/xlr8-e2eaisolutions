@@ -45,7 +45,7 @@ Demonstrate how your RAG solution will be securely deployed, governed, and opera
 
 - Map each RAG component (UI, orchestration, retrieval, LLM backend) to ALZ subnets, private endpoints, and policy controls.
 - As a team, discuss and document:
-  1. **🌐 Landing Zone Integration:** How will each component fit into the ALZ (networking, identity, policy)?
+  1. **Landing Zone Integration:** How will each component fit into the ALZ (networking, identity, policy)?
   2. **Security & Governance:** How will you secure data flows, manage secrets, and enforce governance using Azure-native tools?
   3. **Validation:** How will you test and validate your solution (functional, security, and performance testing)?
 
@@ -55,77 +55,12 @@ Demonstrate how your RAG solution will be securely deployed, governed, and opera
 
 ### Azure Landing Zone Context
 
-Recall that in the **AI Ready Challenge**, IFS established a landing zone with these characteristics:
+Recall that in the **AI Ready Challenge**, IFS established a landing zone with specific characteristics. Your solution must integrate seamlessly into this environment, which includes:
 
-```mermaid
-flowchart TD
-    subgraph ManagementGroup["IFS Enterprise Scale Landing Zone"]
-        subgraph Platform["Platform Management Group"]
-            Connectivity["Connectivity\nSubscription"]
-            Identity["Identity\nSubscription"]
-            Management["Management\nSubscription"]
-        end
-        
-        subgraph Sandbox["Sandbox\nManagement Group"]
-            SandboxSub["Sandbox\nSubscription"]
-        end
-        
-        subgraph Internal["Internal\nManagement Group"]
-            subgraph InternalProd["Internal Production"]
-                InternalProdSub["Internal Prod\nSubscription"]
-            end
-            subgraph InternalNonProd["Internal Non-Production"]
-                InternalDevSub["Internal Dev\nSubscription"]
-                InternalTestSub["Internal Test\nSubscription"]
-            end
-        end
-    end
-    
-    classDef mgmtGroup fill:#0072C6,color:white,stroke:#025,stroke-width:2px
-    classDef subscription fill:#007ACC,color:white,stroke:#025,stroke-width:1px
-    
-    class ManagementGroup,Platform,Sandbox,Internal,InternalProd,InternalNonProd mgmtGroup
-    class Connectivity,Identity,Management,SandboxSub,InternalProdSub,InternalDevSub,InternalTestSub subscription
-```
-
-### Network Topology
-
-Your RAG solution needs to fit within this network structure:
-
-```mermaid
-flowchart TB
-    Internet([Internet]) --- FW
-    
-    subgraph Connectivity["Connectivity Subscription"]
-        FW[Azure Firewall]
-        ERGW[ExpressRoute Gateway]
-        VPNGW[VPN Gateway]
-        
-        FW --- VWAN[Virtual WAN Hub]
-        VWAN --- ERGW
-        VWAN --- VPNGW
-    end
-    
-    subgraph Internal["Internal Subscription"]
-        VNET["Application VNET"]
-        
-        subgraph Subnets["VNET Subnets"]
-            direction LR
-            WebSN["Web Tier"]
-            AppSN["App Tier"]
-            DataSN["Data Tier"]
-            PrivateSN["Private Endpoint Subnet"]
-        end
-    end
-    
-    VWAN --- VNET
-    
-    classDef subscription fill:#0072C6,color:white,stroke:#025,stroke-width:2px
-    classDef network fill:#007ACC,color:white,stroke:#025,stroke-width:1px
-    
-    class Connectivity,Internal subscription
-    class VNET,Subnets,WebSN,AppSN,DataSN,PrivateSN network
-```
+- A multi-subscription architecture for resource organization and access control
+- Network segmentation to isolate workloads and secure data flows
+- Identity and access management policies to enforce least privilege
+- Compliance and governance frameworks to meet regulatory requirements
 
 ### Document Your Integration Approach
 

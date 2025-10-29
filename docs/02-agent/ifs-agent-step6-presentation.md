@@ -201,6 +201,17 @@ Your solution will be evaluated on:
    - Effective visuals
    - Question handling
 
+**Presentation Scoring Rubric:**
+
+| Criteria                    | Description                                                         | Points |
+|-----------------------------|---------------------------------------------------------------------|--------|
+| Business Alignment          | Clear linkage of RAG solution to IFS knowledge management outcomes  | 20     |
+| RAG Architecture Design     | RAG pattern implementation, retrieval strategy, and agent design    | 20     |
+| WAF Pillar Alignment        | Addresses at least 3 WAF pillars (e.g., Security, Reliability)      | 20     |
+| Technical Design Clarity    | Architecture diagram and AI agent workflow are clear and complete   | 20     |
+| Responsible AI & Security   | Demonstrates ethical AI controls and data protection measures       | 10     |
+| Stakeholder Communication   | Effective Q&A responses and justification                           | 10     |
+
 ---
 
 ## Success Criteria ✅

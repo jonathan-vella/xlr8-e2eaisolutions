@@ -97,6 +97,17 @@ Your solution will be evaluated on:
 - [Effective Technical Presentations](https://aka.ms/EffectiveTechPresentations)
 - [Azure Architecture Diagrams](https://learn.microsoft.com/en-us/azure/architecture/browse/)
 
+**Presentation Scoring Rubric:**
+
+| Criteria                    | Description                                                         | Points |
+|-----------------------------|---------------------------------------------------------------------|--------|
+| Business Alignment          | Clear linkage of AI Hub to enterprise AI scaling and governance     | 20     |
+| AI Hub Platform Design      | Hub architecture, governance framework, and multi-workload support  | 20     |
+| WAF Pillar Alignment        | Addresses at least 3 WAF pillars (e.g., Security, Reliability)      | 20     |
+| Technical Design Clarity    | The architecture and governance visuals are clear and complete | 20     |
+| Responsible AI & Security   | Demonstrates enterprise AI controls and governance measures         | 10     |
+| Stakeholder Communication   | Effective Q&A responses and justification                           | 10     |
+
 ## Success Criteria ✅
 
 By the end of this step, you should have:

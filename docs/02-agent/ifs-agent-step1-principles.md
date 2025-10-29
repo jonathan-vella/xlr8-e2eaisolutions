@@ -266,11 +266,11 @@ Designed for open-ended problems where agents build and refine task plans dynami
 - **Concurrent** → Use when you need multiple viewpoints or faster processing
 - **Group Chat** → Use for team collaboration and validation workflows
 - **Handoff** → Use when the best agent depends on the specific context
-- **Magentic-One** → Use for complex problems without a predetermined approach
+- **Magentic** → Use for complex problems without a predetermined approach
 
-*Reference:*
-- [Azure AI Agent Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns)
-- [Semantic Kernel Agent Orchestration](https://learn.microsoft.com/en-us/semantic-kernel/frameworks/agent/agent-orchestration/?pivots=programming-language-csharp)
+*Reference: 
+- [Azure AI Agent Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns)*
+- [Semantic Kernel Agent Orchestration](https://learn.microsoft.com/en-us/semantic-kernel/frameworks/agent/agent-orchestration/?pivots=programming-language-csharp)*
 ### Semantic Kernel provides a unified orchestration workflow
 
 ---
@@ -296,7 +296,7 @@ This step established the foundational knowledge needed to design and implement 
 - **Concurrent** for parallel processing  
 - **Group Chat** for collaborative discussion
 - **Handoff** for dynamic routing
-- **Magentic-One** for adaptive problem-solving
+- **Magentic** for adaptive problem-solving
 
 ### **Key Insights for IFS Implementation:**
 
