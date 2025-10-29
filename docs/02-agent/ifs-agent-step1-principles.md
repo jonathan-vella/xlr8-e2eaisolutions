@@ -288,7 +288,7 @@ This step established the foundational knowledge needed to design and implement 
 - **Concurrent** for parallel processing  
 - **Group Chat** for collaborative discussion
 - **Handoff** for dynamic routing
-- **Magentic** for adaptive problem-solving
+- **Magentic-One** for adaptive problem-solving
 
 ### Key Insights for IFS Implementation:
 
