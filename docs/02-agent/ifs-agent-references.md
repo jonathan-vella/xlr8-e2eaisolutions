@@ -31,7 +31,6 @@ permalink: /ai-agent-challenge/references/
 ## Technologies & Tools
 - [Semantic Kernel Documentation](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
 - [Azure AI Foundry Agent Service](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview/)
-https://modelcontextprotocol.io/
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io/)
 
 ## Best Practices & Context
