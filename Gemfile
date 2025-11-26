@@ -23,4 +23,4 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # webrick is no longer bundled with Ruby 3.0, add it explicitly
-gem "webrick", "~> 1.8"
+gem "webrick", "~> 1.9"
